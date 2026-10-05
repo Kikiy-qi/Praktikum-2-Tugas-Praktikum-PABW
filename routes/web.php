@@ -15,3 +15,4 @@ Route::get('/register', function () { return view('auth.register'); })->name('re
 Route::get('/reservasi', [ReservationController::class, 'index'])->name('reservasi.form');
 Route::post('/reservasi/proses', [ReservationController::class, 'proses'])->name('reservasi.proses');
 Route::get('/reservasi/reset', [ReservationController::class, 'reset'])->name('reservasi.reset');
+
